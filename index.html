@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0d0814" />
+  <title>Happy Birthday SOSO 🎂</title>
+  <meta name="description" content="A special birthday surprise made with love for SOSO" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== INTRO SCREEN ========== -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="intro-content">
+      <div class="gift-box" id="gift-box">
+        <div class="gift-lid">
+          <div class="gift-ribbon-h"></div>
+          <div class="gift-bow">
+            <div class="bow-left"></div>
+            <div class="bow-right"></div>
+          </div>
+        </div>
+        <div class="gift-body">
+          <div class="gift-ribbon-v"></div>
+        </div>
+      </div>
+      <p class="intro-hint">Click to open your surprise 🎁</p>
+      <div class="stars-intro">
+        <span>✨</span><span>⭐</span><span>✨</span><span>🌟</span><span>✨</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div id="main-content" class="hidden">
+
+    <!-- CANVAS FOR CONFETTI + HEARTS -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="floating-hearts" aria-hidden="true">
+        <span>💖</span><span>💝</span><span>💕</span><span>💗</span>
+        <span>💖</span><span>💞</span><span>💕</span><span>💝</span>
+        <span>🌸</span><span>💖</span><span>✨</span><span>💗</span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-sub fade-in" style="animation-delay:0.3s">♡ A Special Day ♡</p>
+        <h1 class="hero-title fade-in" style="animation-delay:0.7s">
+          Happy Birthday,<br /><span class="name-highlight">SOSO</span> 🎂
+        </h1>
+        <p class="hero-date fade-in" style="animation-delay:1.1s">June 12, 2025</p>
+        <div class="hero-divider fade-in" style="animation-delay:1.4s">
+          <span>— ♡ —</span>
+        </div>
+        <a href="#message" class="scroll-btn fade-in" style="animation-delay:1.7s">
+          See Your Surprise ↓
+        </a>
+      </div>
+      <div class="balloons" aria-hidden="true">
+        <div class="balloon" style="--c:#ff6b8a; --d:0s; --l:5%">🎈</div>
+        <div class="balloon" style="--c:#c678dd; --d:0.5s; --l:15%">🎈</div>
+        <div class="balloon" style="--c:#ff9f7f; --d:1s; --l:75%">🎈</div>
+        <div class="balloon" style="--c:#ff6b8a; --d:1.5s; --l:88%">🎈</div>
+        <div class="balloon" style="--c:#c678dd; --d:2s; --l:45%">🎈</div>
+      </div>
+    </section>
+
+    <!-- ===== MESSAGE SECTION ===== -->
+    <section class="message-section" id="message">
+      <div class="section-header reveal">
+        <span class="section-tag">💌 For You</span>
+        <h2>A Message From The Heart</h2>
+      </div>
+      <div class="message-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="message-text" id="message-text" dir="rtl" lang="ar">
+          <!-- ✏️ ابعت رسالتك هنا وأنا هحطها مكان الكلام ده -->
+          <p>سوسو روح قلبي</p>
+          <p>عايز اقولك اني بحبك اوي اوي قد البحر و سمكاته <br />ومستني اليوم اللي انا و انتي هنكون فيه مع بعض</p>
+          <p>انتي روح قلبي و حياتي كلها مش قادر اوصفلك وجودك معايا <br />بيفرق ازاي يمكن من غيرك كنت خدت قرارات كتيره غلط<br />ربنا يديمك في حياتي وربنا يهديكي</p>
+          <p>وكل سنه وانتي طيبه ياروح قلبي و تحققي كل السعاده اللي تستحقيها معايا يارب<br />كل سنه وانتي أحلي و أحلي , يا أحلي حاجه في حياتي . 💖</p>
+        </div>
+        <div class="quote-mark closing">"</div>
+        <div class="message-signature" dir="rtl">— أبو العيال 💕</div>
+      </div>
+    </section>
+
+    <!-- ===== PHOTO SLIDESHOW SECTION ===== -->
+    <section class="photos-section" id="photos">
+      <div class="section-header reveal">
+        <span class="section-tag">📸 Our Memories</span>
+        <h2>Moments I Treasure</h2>
+      </div>
+
+      <div class="slideshow-wrapper reveal">
+        <!-- ====================================================
+             📸 HOW TO ADD YOUR PHOTOS:
+             1. Copy your photos into this website folder
+             2. Name them: photo1.jpg, photo2.jpg, ... photo11.jpg
+             3. Upload everything to GitHub — done! 🎉
+             ==================================================== -->
+        <div class="slideshow" id="slideshow">
+
+          <!-- SLIDE 1 -->
+          <div class="slide active">
+            <img src="photo1.jpg" alt="Memory 1" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">💖 Us together</div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div class="slide">
+            <img src="photo2.jpg" alt="Memory 2" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">✨ My favorite memory</div>
+          </div>
+          <!-- SLIDE 3 -->
+          <div class="slide">
+            <img src="photo3.jpg" alt="Memory 3" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">🌸 Always smiling</div>
+          </div>
+          <!-- SLIDE 4 -->
+          <div class="slide">
+            <img src="photo4.jpg" alt="Memory 4" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">💕 Beautiful moments</div>
+          </div>
+          <!-- SLIDE 5 -->
+          <div class="slide">
+            <img src="photo5.jpg" alt="Memory 5" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">🌟 My world</div>
+          </div>
+          <!-- SLIDE 6 -->
+          <div class="slide">
+            <img src="photo6.jpg" alt="Memory 6" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">💝 Cherished forever</div>
+          </div>
+          <!-- SLIDE 7 -->
+          <div class="slide">
+            <img src="photo7.jpg" alt="Memory 7" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">🎀 So beautiful</div>
+          </div>
+          <!-- SLIDE 8 -->
+          <div class="slide">
+            <img src="photo8.jpg" alt="Memory 8" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">💫 Pure joy</div>
+          </div>
+          <!-- SLIDE 9 -->
+          <div class="slide">
+            <img src="photo9.jpg" alt="Memory 9" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">🌺 Always in my heart</div>
+          </div>
+          <!-- SLIDE 10 -->
+          <div class="slide">
+            <img src="photo10.jpg" alt="Memory 10" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">💖 My everything</div>
+          </div>
+          <!-- SLIDE 11 -->
+          <div class="slide">
+            <img src="photo11.jpg" alt="Memory 11" onerror="this.src='photo_placeholder.png'" />
+            <div class="slide-caption">✨ Perfect day</div>
+          </div>
+
+
+        </div><!-- end .slideshow -->
+
+        <!-- Controls -->
+        <button class="slide-btn prev" id="slide-prev" aria-label="Previous">&#8249;</button>
+        <button class="slide-btn next" id="slide-next" aria-label="Next">&#8250;</button>
+
+        <!-- Dots -->
+        <div class="slide-dots" id="slide-dots"></div>
+
+        <!-- Counter -->
+        <div class="slide-counter" id="slide-counter">1 / 11</div>
+
+      </div><!-- end .slideshow-wrapper -->
+    </section>
+
+    <!-- ===== REASONS SECTION ===== -->
+    <section class="reasons-section" id="reasons">
+      <div class="section-header reveal">
+        <span class="section-tag">💝 Why I Love You</span>
+        <h2>Reasons You're Amazing</h2>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card reveal" style="animation-delay:0.1s">
+          <div class="reason-icon">😊</div>
+          <h3>Your Smile</h3>
+          <p>Your smile can instantly turn my worst day into the best one.</p>
+        </div>
+        <div class="reason-card reveal" style="animation-delay:0.2s">
+          <div class="reason-icon">💫</div>
+          <h3>Your Energy</h3>
+          <p>Your positive energy and spirit are absolutely contagious.</p>
+        </div>
+        <div class="reason-card reveal" style="animation-delay:0.3s">
+          <div class="reason-icon">🧠</div>
+          <h3>Your Mind</h3>
+          <p>The way you think and see the world is one of my favorite things about you.</p>
+        </div>
+        <div class="reason-card reveal" style="animation-delay:0.4s">
+          <div class="reason-icon">🤗</div>
+          <h3>Your Heart</h3>
+          <p>You have one of the kindest, most caring hearts I have ever known.</p>
+        </div>
+        <div class="reason-card reveal" style="animation-delay:0.5s">
+          <div class="reason-icon">🌟</div>
+          <h3>Your Strength</h3>
+          <p>The way you face challenges with grace and courage amazes me every time.</p>
+        </div>
+        <div class="reason-card reveal" style="animation-delay:0.6s">
+          <div class="reason-icon">💖</div>
+          <h3>Just You</h3>
+          <p>Every little thing about you — simply being YOU — is enough reason to love you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COUNTDOWN / BIRTHDAY CANDLES ===== -->
+    <section class="candles-section reveal" id="candles">
+      <div class="section-header">
+        <span class="section-tag">🎂 Make a Wish</span>
+        <h2>Blow Out the Candles!</h2>
+      </div>
+      <div class="cake-container">
+        <div class="cake">
+          <div class="cake-top">
+            <div class="candle-row">
+              <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+              <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+              <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+              <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+              <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+            </div>
+          </div>
+          <div class="cake-layer top-layer">
+            <div class="frosting-drip"></div>
+            <span>🌸 Happy Birthday SOSO 🌸</span>
+          </div>
+          <div class="cake-layer middle-layer"></div>
+          <div class="cake-layer bottom-layer"></div>
+        </div>
+      </div>
+      <p class="candle-hint" id="candle-hint">👆 Click each candle to blow it out and make a wish!</p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="footer-hearts">
+        <span>💖</span><span>💕</span><span>💖</span><span>💕</span><span>💖</span>
+      </div>
+      <p class="footer-msg">Made with every bit of love in my heart 💖</p>
+      <p class="footer-name">Happy Birthday, SOSO 🎂✨</p>
+    </footer>
+
+  </div><!-- end #main-content -->
+
+  <script src="script.js"></script>
+</body>
+</html>
